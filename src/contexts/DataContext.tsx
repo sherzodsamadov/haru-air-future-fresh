@@ -75,7 +75,15 @@ interface DataContextType {
   getStats: () => DashboardStats;
 }
 
-const DataContext = createContext<DataContextType | undefined>(undefined);
+// NOTE: In Vite dev mode, modules can temporarily exist in multiple versions (e.g. with and without `?t=`)
+// during HMR. If `createContext()` runs twice, the Provider and consumers may reference different context
+// instances which triggers: "useData must be used within a DataProvider".
+//
+// To make the context resilient, we store/reuse the context on `globalThis`.
+const g = globalThis as any;
+const DataContext: React.Context<DataContextType | undefined> =
+  (g.__HARU_AIR_DATA_CONTEXT__ as React.Context<DataContextType | undefined> | undefined) ??
+  (g.__HARU_AIR_DATA_CONTEXT__ = createContext<DataContextType | undefined>(undefined));
 
 const STORAGE_KEY = 'haru_air_data';
 
