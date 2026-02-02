@@ -104,9 +104,9 @@ export default function ProductsPage() {
                 <Link
                   key={product.id}
                   to={`/products/${product.slug}`}
-                  className="card-product group"
+                  className="card-product group flex flex-col h-full"
                 >
-                  <div className="aspect-[4/3] bg-muted/50 relative overflow-hidden">
+                  <div className="aspect-[4/3] bg-muted/50 relative overflow-hidden flex-shrink-0">
                     <img
                       src={product.image || '/placeholder.svg'}
                       alt={product.name}
@@ -120,14 +120,14 @@ export default function ProductsPage() {
                       {product.category === 'personal' ? 'Shaxsiy' : 'Shahar uchun'}
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-grow">
                     <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
                       {product.name}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2 flex-grow">
                       {product.shortDesc}
                     </p>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between mt-auto">
                       <span className="text-lg font-bold text-primary">
                         {product.price.toLocaleString()} so'm
                       </span>
