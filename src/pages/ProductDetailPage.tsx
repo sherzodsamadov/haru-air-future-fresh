@@ -54,31 +54,15 @@ export default function ProductDetailPage() {
       <section className="section-padding">
         <div className="container-page">
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Gallery */}
+            {/* Gallery - Single main image only */}
             <div>
-              <div className="aspect-square bg-muted/50 rounded-2xl overflow-hidden mb-4">
+              <div className="aspect-square bg-muted/50 rounded-2xl overflow-hidden">
                 <img
                   src={product.image || '/placeholder.svg'}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              {product.gallery.length > 1 && (
-                <div className="grid grid-cols-4 gap-4">
-                  {product.gallery.map((img, index) => (
-                    <div
-                      key={index}
-                      className="aspect-square bg-muted/50 rounded-lg overflow-hidden cursor-pointer hover:ring-2 ring-primary transition-all"
-                    >
-                      <img
-                        src={img || '/placeholder.svg'}
-                        alt={`${product.name} ${index + 1}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
 
             {/* Info */}

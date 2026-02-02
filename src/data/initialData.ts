@@ -84,8 +84,8 @@ export const initialProducts: Product[] = [
     slug: 'haru-urban-moss-tower',
     category: 'urban',
     price: 45000000,
-    shortDesc: "Katta maydonlar uchun moxli minora tizimi",
-    fullDesc: "HARU Urban Moss Tower — bu katta shahar maydonlari va sanoat hududlari uchun mo'ljallangan yuqori quvvatli havo tozalash tizimi. Maxsus o'stirilgan mox turlari CO2, azot oksidlarini va changni samarali yutadi.",
+    shortDesc: '"Suyuq daraxt" texnologiyasi — shahar havosini yaxshilash uchun',
+    fullDesc: 'HARU Urban Moss Tower — "Suyuq daraxt" texnologiyasi asosida ishlaydigan zamonaviy tizim. Asosiy vazifasi — shahar havosini yaxshilash. Shaharlarda daraxt yetishmagan joylarda CO₂ ni kamaytirib, kislorod chiqaradi va atrof-muhit sifatini oshiradi. Maxsus o\'stirilgan mox turlari azot oksidlarini va changni samarali yutadi.',
     specs: [
       { label: "Balandligi", value: "4 metr" },
       { label: "Diametri", value: "1.5 metr" },
