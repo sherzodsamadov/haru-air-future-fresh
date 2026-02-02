@@ -99,27 +99,6 @@ export const initialProducts: Product[] = [
     createdAt: '2024-02-10',
     updatedAt: '2024-02-10',
   },
-  {
-    id: '5',
-    name: 'HARU Air Sumka',
-    slug: 'haru-air-sumka',
-    category: 'personal',
-    price: 220000,
-    shortDesc: "Sumkaga biriktirib olib yuradigan havo tozalagich",
-    fullDesc: "HARU Air Sumka modeli — kundalik hayotda doimiy himoya uchun. Sumka, ryukzak yoki kamaraga osib olib yurish mumkin. Jimgina ishlaydi va atrofdagilarga xalaqit bermaydi.",
-    specs: [
-      { label: "O'lchami", value: "6 x 4 x 2 sm" },
-      { label: "Og'irligi", value: "45 g" },
-      { label: "Batareya", value: "Li-ion 500mAh" },
-      { label: "Ishlash vaqti", value: "16 soat" },
-      { label: "Shovqin", value: "< 20 dB" },
-    ],
-    useCases: ["Kundalik yurish", "Sport mashg'ulotlari", "Mehnat joyida"],
-    image: productPersonal,
-    gallery: [productPersonal],
-    createdAt: '2024-02-15',
-    updatedAt: '2024-02-15',
-  },
 ];
 
 export const initialCategories: Category[] = [
@@ -128,7 +107,7 @@ export const initialCategories: Category[] = [
     name: 'Shaxsiy',
     slug: 'personal',
     description: 'Shaxsiy foydalanish uchun mini havo tozalagichlar',
-    productCount: 3,
+    productCount: 2,
   },
   {
     id: '2',
