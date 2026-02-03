@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { PublicLayout } from '@/components/layout/PublicLayout';
 import { useData } from '@/contexts/DataContext';
 import { Partners } from '@/components/Partners';
-import productPersonal from '@/assets/product-personal.png';
 import productUrbanPanel from '@/assets/product-urban-panel.png';
 
 export default function HomePage() {
@@ -105,15 +104,6 @@ export default function HomePage() {
                   alt="HARU AIR Urban Panel"
                   className="relative w-full h-auto rounded-2xl shadow-2xl"
                 />
-              </div>
-              <div className="absolute -bottom-8 -left-8 w-48 animate-float">
-                <div className="bg-card p-4 rounded-2xl shadow-xl">
-                  <img
-                    src={productPersonal}
-                    alt="HARU AIR Personal"
-                    className="w-full h-auto"
-                  />
-                </div>
               </div>
             </div>
           </div>
